@@ -9,15 +9,13 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='portfolio.css') }}">
 </head>
 <body>
-	{% if headline1 %}
-	<H2>{{ headline1 }}</H2>
-	{% elif headline2 %}
-	<H2>{{ headline2 }}</H2>
-	{% else %}
-	<H2>{{ headline3 }}</H2>
+	{% if headline %}
+	<H2>{{ headline }}</H2>
 	{% endif %}
 <ul>
-	<li></li>
+	{% for name in names %}
+	<li>{{ name }}</li>
+	{% endfor %}
 </ul>
 
 <form>
