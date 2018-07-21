@@ -12,23 +12,27 @@
 	{% if headline %}
 	<H2>{{ headline }}</H2>
 	{% endif %}
-<ul>
-	{% for name in names %}
-	<li>{{ name }}</li>
-	{% endfor %}
-</ul>
+	<nav>
+		<div id="navbar">
+			{% for name in names %}
+			<div class="test"> {{ name }} </div>
+			{% endfor %}
+		</div>
+	</nav>
 
+<!--
 <form>
 	<input type="text" name="Name" placeholder="Your Full Name">
 	<button>Submitt</button>
-</form>
+</form>-->
+
 </body>
 	
 	<footer>
 		<a href="#"></a>
 		<a href="#"></a>
 		<a href="#"></a>
-	<p>Created by</p>
+		<p>Created by</p>
 	<footer>
 
 </html>

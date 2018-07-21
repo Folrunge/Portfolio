@@ -1,6 +1,9 @@
 $color: #fff;
-$list-style: none;
+//$list-style: none;
 $family: Montserrat;
+$center: center;
+$pad: 2%;
+
 
 body {
 	background-color: #000;
@@ -13,9 +16,10 @@ h2 {
 	font-family: $family;
 }
 
-ul {
+
+/*ul {
 	list-style-type: $list-style;
-}
+}*/
 
 %navbar {
 	font-size: 18px;
@@ -24,6 +28,32 @@ ul {
 	color: $color;
 }
 
-p {
+p, #navbar {
 	@extend %navbar;
 }
+
+h2 {
+	text-align: $center;
+}
+
+footer {
+	p {
+text-align: $center;
+	}
+}
+
+#navbar {
+	position: fixed;
+	height: 100%;
+	width: 10%;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #151515;
+	overflow-x: hidden;
+	div {
+		padding: $pad;
+		display: block;
+	}
+}
+
