@@ -2,7 +2,10 @@ $color: #fff;
 //$list-style: none;
 $family: Montserrat;
 $center: center;
-$pad: 2%;
+$pad: 10%;
+$navheight: 10%;
+$navwidth: 100%;
+$navcolor: #151515;
 
 
 body {
@@ -49,11 +52,20 @@ text-align: $center;
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #151515;
+	background-color: $navcolor;
 	overflow-x: hidden;
 	div {
-		padding: $pad;
-		display: block;
+		padding-top: $pad;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: $navwidth;
+		height: $navheight;
+		border: 1px solid;
+		border-color: $navcolor;
 	}
 }
 
+#navbar div:hover {
+	color: #a8a8a8;
+}
