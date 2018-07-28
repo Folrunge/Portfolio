@@ -10,7 +10,7 @@ h2 {
 /*ul {
 	list-style-type: $list-style;
 }*/
-p, #navbar {
+p, #navbar, #top {
   font-size: 18px;
   font-family: Montserrat;
   font-weight: bold;
@@ -18,6 +18,12 @@ p, #navbar {
 
 h2 {
   text-align: center; }
+
+#top {
+  display: flex;
+  text-align: justify;
+  padding-left: 15%;
+  padding-right: 15%; }
 
 footer {
   text-align: center; }
@@ -44,7 +50,8 @@ footer {
   #navbar i {
     padding-right: 4%; }
 
-#navbar div:hover {
-  color: #a8a8a8; }
+.nav-link:hover {
+  background-color: #7e7e7e;
+  cursor: pointer; }
 
 /*# sourceMappingURL=portfolio.css.map */

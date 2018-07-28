@@ -1,5 +1,4 @@
 $color: #fff;
-//$list-style: none;
 $family: Montserrat;
 $center: center;
 $pad: 10%;
@@ -35,8 +34,16 @@ p, #navbar {
 	@extend %navbar;
 }
 
-h2 {
+h2{
 	text-align: $center;
+}
+
+#top {
+	display: flex;
+	text-align: justify;
+	padding-left: 15%;
+	padding-right: 15%;
+	@extend %navbar;
 }
 
 footer {
@@ -72,6 +79,7 @@ footer {
 		}
 }
 
-#navbar div:hover {
-	color: #a8a8a8;
+.nav-link:hover {
+	background-color: #7e7e7e;
+	cursor: pointer;
 }
